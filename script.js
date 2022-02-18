@@ -1,26 +1,38 @@
-// it defines a number
-// it takes a integer value
-console.log (typeof(1));
-// it defines a number
-// it takes float number
-console.log  (typeof(1.1));
-// it defines a string
-// which is always enclosed with a single ('') or double quotes (“ ”)
-console.log  (typeof('1.1'));
-// it defines a boolean
-// it has true and false
-console.log (typeof(true));
-// it defines a object
-// null is an object where it is primitive
-console.log (typeof(null));
-// it defines a undefined
-//Whenever a function in JavaScript does not explicitly return anything, it returns undefined by default
-console.log (typeof(undefined));
-// it defines object
-// it takes empty square bracket is a object
-console.log (typeof([]));
-// it defines object
-// it takes curly bracket is a object
-console.log (typeof({}));
-// it defines number
-console.log (typeof(NaN));
+//given json data iterate with for,for in,for of and forEach loops respectively.
+let employee=[{"Name":"vino",
+         "age":"23",
+         "email":" vinogurunath@gmail.com",
+         "salary":"75k"},
+         
+         {"Name":"sathiya",
+         "age":"21",
+         "email":"sathiya@gmail.com",
+         "salary":"50k"},
+         
+         {"Name":"chandru",
+         "age":"22",
+         "email":"chandru@gmail.com",
+         "salary":"40k"}];
+
+
+//for loop   
+
+for(i=0;i<employee.length;i++){
+   console.log([i]);          
+} ;
+console.log("...............");
+//for in loop
+
+ for( let x in employee){
+     console.log(employee[x]);
+ } ;       
+ console.log("..............");
+//for of loop
+
+ for(let a of employee){
+     console.log(a);
+ };
+ console.log("..............");
+// //for Each loop
+
+employee.forEach(element => console.log(element));
